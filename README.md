@@ -66,7 +66,7 @@ KOSH.id/
 
 ## Off-Chain Components
 
-## 1) Telegram Bot (`bot`)
+### 1) Telegram Bot (`bot`)
 
 TypeScript bot using `grammy`, Solana RPC helpers, and Privy server auth.
 
@@ -81,7 +81,7 @@ TypeScript bot using `grammy`, Solana RPC helpers, and Privy server auth.
 - RPC calls with timeout and friendly retry handling.
 - Mirrors on-chain max-loan logic client-side for display.
 
-## 2) Blink / Solana Actions (`blink`)
+### 2) Blink / Solana Actions (`blink`)
 
 TypeScript module for Solana Actions-compatible loan interactions:
 - GET metadata and max borrowable display.
@@ -111,17 +111,17 @@ TypeScript module for Solana Actions-compatible loan interactions:
 
 ## Development Setup
 
-## Prerequisites
+### Prerequisites
 - Rust toolchain (compatible with Anchor/Solana stack)
 - Solana CLI
 - Anchor CLI (`0.30.1` expected by `Anchor.toml`)
 - Node.js + npm
 
-## Install Dependencies
+### Install Dependencies
 
 ```bash
 # repo root
-cd /home/runner/work/KOSH.id/KOSH.id
+cd KOSH.id
 
 # Rust deps are fetched automatically by cargo commands.
 
