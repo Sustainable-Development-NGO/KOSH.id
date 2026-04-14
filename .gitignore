@@ -16,9 +16,9 @@ blink/node_modules/
 .env
 .env.local
 
-# Solana keypairs generated locally
-**/*.json
-!Anchor.toml
+# Solana keypairs generated locally (pattern: id.json, wallet.json, deploy keypairs)
+**/*-keypair.json
+**/id.json
 
 # IDE
 .idea/
