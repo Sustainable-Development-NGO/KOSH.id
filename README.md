@@ -121,7 +121,7 @@ TypeScript module for Solana Actions-compatible loan interactions:
 
 ```bash
 # repo root
-cd KOSH.id
+cd <repository-root>
 
 # Rust deps are fetched automatically by cargo commands.
 
