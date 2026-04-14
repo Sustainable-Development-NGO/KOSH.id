@@ -1,0 +1,22 @@
+{
+  "name": "kosh-bot",
+  "version": "0.1.0",
+  "description": "KOSH.id Telegram bot for Indian gig workers",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "grammy": "^1.26.0",
+    "@solana/web3.js": "^1.95.0",
+    "@privy-io/server-auth": "^1.14.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}

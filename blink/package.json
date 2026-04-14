@@ -1,0 +1,21 @@
+{
+  "name": "kosh-blink",
+  "version": "0.1.0",
+  "description": "KOSH.id Solana Actions / Blink endpoint",
+  "main": "dist/action.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/action.js",
+    "dev": "ts-node src/action.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "@solana/actions": "^1.6.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
