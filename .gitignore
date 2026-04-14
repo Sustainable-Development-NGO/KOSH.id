@@ -1,0 +1,26 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+
+# Anchor build output
+.anchor/
+dist/
+
+# Node.js
+node_modules/
+bot/node_modules/
+blink/node_modules/
+*.tsbuildinfo
+
+# Env files
+.env
+.env.local
+
+# Solana keypairs generated locally
+**/*.json
+!Anchor.toml
+
+# IDE
+.idea/
+.vscode/
+*.swp
