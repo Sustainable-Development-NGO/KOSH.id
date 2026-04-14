@@ -58,9 +58,11 @@ export async function getOrCreateWallet(
 
     return new PublicKey(solanaWallet.address);
   } catch (err) {
-    if (err instanceof Error && err.message !== RETRY_MSG_HI) {
-      throw new Error(RETRY_MSG_HI);
+    // If the error is already the localised Hindi message, re-throw as-is.
+    // Otherwise wrap it so users always see a friendly retry prompt.
+    if (err instanceof Error && err.message === RETRY_MSG_HI) {
+      throw err;
     }
-    throw err;
+    throw new Error(RETRY_MSG_HI);
   }
 }

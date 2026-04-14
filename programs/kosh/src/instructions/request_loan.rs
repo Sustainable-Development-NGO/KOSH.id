@@ -68,6 +68,8 @@ pub fn handler(
 
     require!(
         eff_score >= ctx.accounts.config.min_reputation_for_loan,
+        // InsufficientVault is used for all "cannot issue loan" conditions
+        // per the v1 error enum (spec does not include InsufficientReputation).
         KoshError::InsufficientVault
     );
 
